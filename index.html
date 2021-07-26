@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <script async src="javascript/scripts.js"></script>
+</head>
+<body>
+    <div class="widget">
+        <div class="widget__task-1 wrapper">
+            <h3 class="widget__title">Задание 1:</h3>
+            <input type="text" placeholder="Введите число" id="input-number">
+            <button class="widget__task-1_button button-done" data-content="content">Готово</button>
+        </div>
+
+        <div class="widget__task-2 wrapper">
+            <h3 class="widget__title">Задание 2:</h3>
+            <input type="text" placeholder="Введите имя" id="input-name">
+            <button class="widget__task-2_button button-done" data-content="content">Готово</button>
+        </div>
+
+        <div class="widget__task-3 wrapper">
+            <h3 class="widget__title">Задание 3:</h3>
+            <input type="text" placeholder="Введите числа через запятую" id="input-numbers">
+            <button class="widget__task-3_button button-done" data-content="content">Готово</button>
+        </div>
+
+        <div class="widget__task-4 wrapper">
+            <h3 class="widget__title">Задание 4:</h3>
+            <p>Данную последовательность нельзя назвать правильной.<br /> Для того, чтобы данная последовательность считалась правильной, необходимо представить ее, к примеру, в следующем виде:<br />[((())<strong style="font-size: 25px">)</strong>()<strong style="font-size: 25px">[</strong>(())]] - добавить одну открывающуюся квадратную скобку "[" и одну закрывающуюся круглую скобку ")" <br /> <span style="font-size: 16px; font-style: italic;">Прим: нужные символы выделены для наглядности</span></p>
+        </div>
+
+        <div id="overlay" class="overlay">
+            <div class="modal hide" id="content">
+                <h2><span class="modal__message"></span></h2>
+                <button class="modal__button-close">X</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
