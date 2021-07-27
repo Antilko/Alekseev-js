@@ -19,7 +19,7 @@ const TaskList = function() {
             message.innerHTML = `Привет`;
         }
 
-        modalPage(buttons);    
+        modalPage();    
     };
 
     const taskSecond = function() {
@@ -38,7 +38,7 @@ const TaskList = function() {
             message.innerHTML = `Привет, ${inputName[0].toUpperCase() + inputName.slice(1).toLowerCase()}`;
         }
 
-        modalPage(buttons);    
+        modalPage();    
     };
 
     const taskThird = function() {
@@ -59,14 +59,13 @@ const TaskList = function() {
             message.innerHTML = newArray.join(`, `);
         }
 
-        modalPage(buttons);    
+        modalPage();    
     };
 
     const modalPage = function () {
         let contentId = buttons.dataset.content,
             content = document.querySelector('#' + contentId),
             contents = document.querySelectorAll('.modal');
-            console.log(content)
 
         contents.forEach(function(content) {
             overlay.classList.add('active');
@@ -92,17 +91,17 @@ const TaskList = function() {
 
     buttonFirstTask.addEventListener('click', (e) => {
         e.preventDefault();
-        taskFirst(buttons);
+        taskFirst();
     }); 
 
     buttonSecondTask.addEventListener('click', (e) => {
         e.preventDefault();
-        taskSecond(buttons);
+        taskSecond();
     }); 
 
     buttonThirdTask.addEventListener('click', (e) => {
         e.preventDefault();
-        taskThird(buttons);
+        taskThird();
     }); 
 
     closeButton.forEach(function(item) {
